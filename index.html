@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Proba el mejor café" />
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <link rel="stylesheet" href="api.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Cafetera Parlante</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-container">
+        <div class="logo">
+          <img src="/img/logooo.png" alt="logo" />
+        </div>
+        <ul class="nav-items">
+          <li><a href="#nosotros">NOSOTROS </a></li>
+          <li><a href="#cafes">CAFES</a></li>
+          <li><a href="#postres">POSTRES</a></li>
+          <li><a href="#shop">SHOP</a></li>
+          <li><a href="#contact-form">CONTACTANOS</a></li>
+          <li><a href="#mapa">DÓNDE ESTAMOS</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="banner-container">
+          <p class="banner-left">CAFÉ, AMIGOS</p>
+          <p class="banner-right">UN BUEN LUGAR</p>
+          <p class="banner-center">Vení a conocernos</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="nosotros-container">
+          <h2 id="nosotros">NOSOTROS</h2>
+          <!-- utilizar <picture> + <source> para responsive images -->
+          <img src="img/nosotros.jpg" alt="nosotros" class="nosotros-img" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="cafe-container">
+          <h2 id="cafes">NUESTROS CAFES</h2>
+          <div class="cafe-lista-container">
+            <ul>
+              <li>
+                <div class="flip-box">
+                  <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                      <img src="img/moca.jpg" alt="moca" />
+                    </div>
+                    <div class="flip-box-back">
+                      <p>Café espresso, con leche vaporizada y chocolate</p>
+                    </div>
+                  </div>
+                  <h3>Mocaccino</h3>
+                  <p>$$$</p>
+                </div>
+              </li>
+              <li>
+                <div class="flip-box">
+                  <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                      <img src="img/macchiato.jpg" alt="macchiato" />
+                    </div>
+                    <div class="flip-box-back">
+                      <p>
+                        Café espresso, con leche, jarabe de vainlla y salsa de
+                        caramelo
+                      </p>
+                    </div>
+                  </div>
+
+                  <h3>Caramel Machiatto</h3>
+                  <p>$$$</p>
+                </div>
+              </li>
+              <li>
+                <div class="flip-box">
+                  <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                      <img src="img/capuccino.jpg" alt="" class="capImg" />
+                    </div>
+                    <div class="flip-box-back">
+                      <p>Café espresso, con leche y chocolate</p>
+                    </div>
+                  </div>
+                  <h3>Capuccino</h3>
+                  <p>$$$</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+<!-- api java -->
+<!-- VER MOZILLA para no implementar JS al final del body, hacerlo en el head -->
+
+          <div class="reco-container">
+            <h2 class="reco-texto">¿No sabés qué pedir? ¡Te ayudamos!</h2>
+            <span class="respuesta-API">Te recomiendo: </span>
+            <button class="reco-boton" onclick="obtenerCafe()">
+              Recomendame un café
+            </button>
+            <script src="api.js"></script>
+          </div>
+        </div>
+      </section>
+
+<!-- fin api java -->
+
+      <section>
+        <div class="postres-container">
+          <h2 id="postres">NUESTROS POSTRES</h2>
+          <div class="postres-lista-container">
+            <ul>
+              <li>
+                <img src="img/torta.jpeg" alt="torta"/>
+                <h3>Porción de torta</h3>
+                <p>$$$</p>
+              </li>
+              <li>
+                <img src="img/cupacke.jpg" alt="cupcake"/>
+                <h3>Cupcakes</h3>
+                <p>$$$</p>
+              </li>
+              <li>
+                <img src="img/donas.jpg" alt="donas"/>
+                <h3>Donas</h3>
+                <p>$$$</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="shop-container">
+          <h2 id="shop">NUESTRO SHOP</h2>
+          <div class="shop-lista-container">
+            <ul>
+              <li>
+                <img src="img/merchp.jpg" alt="merchp" />
+                <32>Café</32>
+                <p>$$$</p>
+              </li>
+              <li>
+                <img src="img/merchc.jpg" alt="merchc"/>
+                <h3>Taza</h3>
+                <p>$$$</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="donde-container">
+          <h2 id="mapa">DÓNDE ESTAMOS</h2>
+          <div class="direccion">
+            <p>B1904 La Plata, Provincia de Buenos Aires</p>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3270.9717925681625!2d-57.937618984896524!3d-34.93224438037569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e8a30343a2cf%3A0xd1d53a097358cb17!2sC.%2069%2C%20B1904%20La%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1665545039859!5m2!1ses-419!2sar"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="contacto">
+          <div class="contacto-titulo">
+            <h1>¡CONTACTANOS!</h1>
+          </div>
+        </div>
+      </section>
+      <div class="col-12">
+        <div class="newsletter">
+          <form
+            id="contact-form"
+            class="newsletter-form"
+            action="https://formspree.io/f/xqkjloal"
+            method="POST"
+          >
+            <div class="row">
+              <div class="col-12 txt-center">
+                <input
+                  name="name"
+                  type="text"
+                  class="feedback-input"
+                  placeholder="Nombre"
+                />
+              </div>
+              <div class="col-12 txt-center">
+                <input
+                  name="email"
+                  type="text"
+                  class="feedback-input"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="col-12 txt-center">
+                <textarea
+                  name="text"
+                  class="feedback-input"
+                  placeholder="Mensaje"
+                ></textarea>
+              </div>
+              <div class="col-12 txt-center">
+                <input type="submit" value="ENVIAR" class="submitBut" />
+              </div>
+            </div>
+            <script src="form.js"></script>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+
+  <footer class="footer">
+    <div class="iconos">
+      <img src="/img/instagram.png" alt="" />
+      <img src="/img/facebook.png" alt="" />
+    </div>
+  </footer>
+</html>
