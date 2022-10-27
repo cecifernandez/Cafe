@@ -5,8 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Proba el mejor café" />
-    <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="api.css" />
+    <link rel="stylesheet" href="hamburger-menu.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <title>Cafetera Parlante</title>
@@ -18,14 +23,19 @@
           <img src="/img/logooo.png" alt="logo" />
         </div>
         <ul class="nav-items">
-          <li><a href="#nosotros">NOSOTROS </a></li>
-          <li><a href="#cafes">CAFES</a></li>
-          <li><a href="#postres">POSTRES</a></li>
-          <li><a href="#shop">SHOP</a></li>
-          <li><a href="#contact-form">CONTACTANOS</a></li>
-          <li><a href="#mapa">DÓNDE ESTAMOS</a></li>
+          <li><a class="menu-items" href="#nosotros">NOSOTROS </a></li>
+          <li><a class="menu-items" href="#cafes">CAFES</a></li>
+          <li><a class="menu-items" href="#postres">POSTRES</a></li>
+          <li><a class="menu-items" href="#shop">SHOP</a></li>
+          <li><a class="menu-items" href="#contact-form">CONTACTANOS</a></li>
+          <li><a class="menu-items" href="#mapa">DÓNDE ESTAMOS</a></li>
         </ul>
+        <button class="hamburger">
+          <i class="icono-menu fa-solid fa-bars"></i>
+          <i class="cerrar-menu fa-solid fa-xmark"></i>
+        </button>
       </nav>
+      <script src="hamburger-menu.js"></script>
     </header>
 
     <main>
@@ -105,8 +115,8 @@
             </ul>
           </div>
 
-<!-- api java -->
-<!-- VER MOZILLA para no implementar JS al final del body, hacerlo en el head -->
+          <!-- api java -->
+          <!-- VER MOZILLA para no implementar JS al final del body, hacerlo en el head -->
 
           <div class="reco-container">
             <h2 class="reco-texto">¿No sabés qué pedir? ¡Te ayudamos!</h2>
@@ -119,7 +129,7 @@
         </div>
       </section>
 
-<!-- fin api java -->
+      <!-- fin api java -->
 
       <section>
         <div class="postres-container">
@@ -127,17 +137,17 @@
           <div class="postres-lista-container">
             <ul>
               <li>
-                <img src="img/torta.jpeg" alt="torta"/>
+                <img src="img/torta.jpeg" alt="torta" />
                 <h3>Porción de torta</h3>
                 <p>$$$</p>
               </li>
               <li>
-                <img src="img/cupacke.jpg" alt="cupcake"/>
+                <img src="img/cupacke.jpg" alt="cupcake" />
                 <h3>Cupcakes</h3>
                 <p>$$$</p>
               </li>
               <li>
-                <img src="img/donas.jpg" alt="donas"/>
+                <img src="img/donas.jpg" alt="donas" />
                 <h3>Donas</h3>
                 <p>$$$</p>
               </li>
@@ -153,11 +163,11 @@
             <ul>
               <li>
                 <img src="img/merchp.jpg" alt="merchp" />
-                <32>Café</32>
+                <h2>Café</h2>
                 <p>$$$</p>
               </li>
               <li>
-                <img src="img/merchc.jpg" alt="merchc"/>
+                <img src="img/merchc.jpg" alt="merchc" />
                 <h3>Taza</h3>
                 <p>$$$</p>
               </li>
